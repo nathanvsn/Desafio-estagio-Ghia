@@ -19,7 +19,7 @@ Acesse a base aberta da CETIP/B3 https://www.b3.com.br/pt_br/market-data-e-indic
 - Extraia dados das "Ações do IBOVESPA - Maiores Altas e Baixas" da página 10.
 
 ### 2. Extração de Dados Detalhados:
-- Extraia dados detalhados apenas das ações de destaque(página 10) disponíveis nas páginas 96 a 506.
+- Extraia dados detalhados apenas das ações de destaque (página 10) disponíveis nas páginas 96 a 506.
 
 ### 3. Desenvolvimento de Consultas SQL:
 - Crie uma consulta SQL para a tabela "Destaque", incorporando dados do passo 1.
@@ -30,6 +30,9 @@ Acesse a base aberta da CETIP/B3 https://www.b3.com.br/pt_br/market-data-e-indic
 
 ### 5. Visualização Integrada:
 - Crie um viewer para apresentar informações integradas das tabelas "Destaque" e "auxiliar_destaque".
+
+### OBS:
+- Todos os dados e operações relacionadas ao desafio devem ser implementados em um servidor PostgreSQL local. Utilize a seguinte configuração padrão para a conexão: postgresql://postgres:postgres@localhost:5432/postgres
 
 ## Entregáveis:
 
