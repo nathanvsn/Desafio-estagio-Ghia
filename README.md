@@ -41,7 +41,7 @@ Acesse a base aberta da CETIP/B3 https://www.b3.com.br/pt_br/market-data-e-indic
 
 ### 2.Pasta_codigo
 #### Crie uma pasta "Pasta_codigo" com os seguinte itens:
-- Codigos python separados ou não por modulos sendo o principal como "main.py"
+- Codigos python, separados ou não por modulos sendo o principal como "main.py"
 - Documentação de cada etapa do processo.
 
 ## Resultados Esperados:
