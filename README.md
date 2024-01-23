@@ -17,10 +17,14 @@ Demonstração de proficiência no uso de SQL para armazenar, consultar e manipu
 Capacidade de criar visualizações claras e informativas, facilitando a análise e a tomada de decisão baseada em dados.
 ## Resultados Esperados:
 
-Competência Técnica: Demonstração clara de habilidades técnicas em SQL e em ferramentas de extração de dados.
-Resolução de Problemas: Habilidade para identificar e solucionar desafios práticos relacionados à gestão de dados.
-Inovação e Criatividade: Aplicação de abordagens inovadoras e criativas na manipulação e apresentação de dados.
-Documentação e Comunicação: Capacidade de documentar o processo de forma clara e concisa, evidenciando o raciocínio por trás das escolhas técnicas.
+### Competência Técnica: 
+Demonstração clara de habilidades técnicas em SQL e em ferramentas de extração de dados.
+### Resolução de Problemas: 
+Habilidade para identificar e solucionar desafios práticos relacionados à gestão de dados.
+### Inovação e Criatividade: 
+Aplicação de abordagens inovadoras e criativas na manipulação e apresentação de dados.
+### Documentação e Comunicação:
+Capacidade de documentar o processo de forma clara e concisa, evidenciando o raciocínio por trás das escolhas técnicas.
 
 # Processo de Avaliação:
 Os candidatos serão avaliados com base na precisão técnica, eficiência, criatividade e clareza na documentação de suas soluções. A avaliação final considerará a adequação das soluções às necessidades operacionais da empresa e a capacidade do candidato de trabalhar de forma eficaz com dados complexos.
