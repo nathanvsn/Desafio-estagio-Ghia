@@ -19,7 +19,7 @@ Acesse a base aberta da CETIP/B3 https://www.b3.com.br/pt_br/market-data-e-indic
 - Extraia dados das "Ações do IBOVESPA - Maiores Altas e Baixas" da página 10.
 
 ### 2. Extração de Dados Detalhados:
-- Extraia dados detalhados apenas das ações de destaque (página 10) disponíveis nas páginas 96 a 506.
+- Extraia dados detalhados apenas das ações de destaque (página 10) disponíveis nas páginas 96 a 162.
 
 ### 3. Desenvolvimento de Consultas SQL:
 - Crie uma consulta SQL para a tabela "Destaque", incorporando dados do passo 1.
