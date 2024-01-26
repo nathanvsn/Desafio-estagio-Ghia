@@ -1,62 +1,34 @@
-# Teste Prático para Estágio em Banco de Dados e SQL
+# Documentação Desafio Ghia
 
-## Instruções:
-- Faça um fork deste repositório;
-- O conjunto mínimo de tecnologias a serem utilizadas são: SQL e Python
-- Crie um passo a passo de como rodar a sua aplicação;
-- Após finalizar, submeta um pull request com um comentário informando o seu e-mail de contato e aguarde nossa avaliação.
+Avaliação do Desafio Ghia.
 
-## Objetivo: 
-Este desafio tem como finalidade avaliar e desenvolver competências cruciais para a função de estagiário em Banco de Dados e SQL, alinhadas às necessidades operacionais e estratégicas da nossa empresa. Os participantes serão desafiados a demonstrar habilidades em extração automática de dados e gerenciamento eficiente de bases de dados SQL, competências essenciais para o sucesso em nosso ambiente de trabalho dinâmico e orientado a dados.
 
-## Instruções Detalhadas:
+## Funcionalidades
 
-### Utilização da Base de Dados Aberta da CETIP/B3:
-Acesse a base aberta da CETIP/B3 https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/boletim-diario/boletim-diario-do-mercado/
+- **Extração Automatizada de Dados**: O programa acessa automaticamente o site da B3, seleciona e baixa o arquivo PDF do boletim diário do mercado para a data especificada pelo usuário.
+- **Processamento e Análise de Dados**: Após o download do arquivo, o sistema processa e extrai as tabelas principais das maiores altas e baixas do dia.
+- **Pesquisa Detalhada**: O programa então realiza uma busca detalhada por mais informações sobre essas empresas no PDF, especificamente entre as páginas 96 e 168.
+- **Consolidação de Dados**: Todos os dados extraídos são consolidados em tabelas estruturadas para análise.
+- **Integração com Banco de Dados**: As tabelas geradas são automaticamente carregadas em um banco de dados SQL, permitindo uma gestão eficiente e a realização de consultas complexas.
 
-### 1. Extração de Dados com Inputs Dinâmicos:
-- Implemente entrada de dados (data de início e fim) para o período de análise.
-- Extraia dados das "Ações do IBOVESPA - Maiores Altas e Baixas" da página 10.
+## Requisitos do Sistema
 
-### 2. Extração de Dados Detalhados:
-- Extraia dados detalhados apenas das ações de destaque (página 10) disponíveis nas páginas 96 a 162.
+- **Python**: É necessário ter a última versão do Python instalada.
+- **Bibliotecas**: As bibliotecas Selenium, Pandas, Tabula, SQLAlchemy e Datetime devem estar instaladas.
+- **Navegador Safari**: O sistema foi desenvolvido para funcionar com o navegador Safari.
+- **Caminho do PDF**: O usuário deve especificar o caminho base para o download e processamento do arquivo PDF.
 
-### 3. Desenvolvimento de Consultas SQL:
-- Crie uma consulta SQL para a tabela "Destaque", incorporando dados do passo 1.
-- Desenvolva uma consulta SQL para "auxiliar_destaque" com dados do passo 2.
+## Instruções de Uso
 
-### 4. Relacionamento entre Tabelas:
-- Elabore uma consulta SQL estabelecendo relacionamento entre "Destaque" e "auxiliar_destaque".
+1. **Preparação do Ambiente**:
+   - Certifique-se de que todas as bibliotecas necessárias estão instaladas.
+   - Verifique se a última versão do Python está instalada.
+   - Configure o caminho base para o download do arquivo PDF.
 
-### 5. Visualização Integrada:
-- Crie um viewer para apresentar informações integradas das tabelas "Destaque" e "auxiliar_destaque".
+2. **Execução do Programa**:
+   - Execute o arquivo `main.py` para iniciar o processo.
+   - Quando solicitado, escolha um dia útil do mês de janeiro para análise.
+   - O sistema irá automaticamente acessar o site da B3, baixar o arquivo PDF do dia escolhido e iniciar o processamento dos dados.
 
-### OBS:
-- Todos os dados e operações relacionadas ao desafio devem ser implementados em um servidor PostgreSQL local. Utilize a seguinte configuração padrão para a conexão: postgresql://postgres:postgres@localhost:5432/postgres
-
-## Entregáveis:
-
-### 1.querys.sql 
-#### Crie um arquivo querys.sql com os seguintes itens:
-- Consultas SQL para Criação de Tabelas:
-- Inclua scripts SQL para a criação das tabelas "Destaque" e "auxiliar_destaque".
-- Forneça a consulta SQL que relaciona as tabelas "Destaque" e "auxiliar_destaque".
-
-### 2.Pasta_codigo
-#### Crie uma pasta "Pasta_codigo" com os seguinte itens:
-- Codigos python, separados ou não por modulos sendo o principal como "main.py"
-- Documentação de cada etapa do processo.
-
-## Resultados Esperados:
-
-### Competência Técnica: 
-Demonstração clara de habilidades técnicas em SQL e em ferramentas de extração de dados.
-### Resolução de Problemas: 
-Habilidade para identificar e solucionar desafios práticos relacionados à gestão de dados.
-### Inovação e Criatividade: 
-Aplicação de abordagens inovadoras e criativas na manipulação e apresentação de dados.
-### Documentação e Comunicação:
-Capacidade de documentar o processo de forma clara e concisa, evidenciando o raciocínio por trás das escolhas técnicas.
-
-# Processo de Avaliação:
-Os candidatos serão avaliados com base na precisão técnica, eficiência, criatividade e clareza na documentação de suas soluções. A avaliação final considerará a adequação das soluções às necessidades operacionais da empresa e a capacidade do candidato de trabalhar de forma eficaz com dados complexos.
+3. **Análise dos Dados**:
+   - Após o processamento, as tabelas geradas estarão disponíveis no banco de dados SQL conectado.
