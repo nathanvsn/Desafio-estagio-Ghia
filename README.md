@@ -32,3 +32,10 @@ Avaliação do Desafio Ghia.
 
 3. **Análise dos Dados**:
    - Após o processamento, as tabelas geradas estarão disponíveis no banco de dados SQL conectado.
+
+OBS: O Dash acho que está com uma pequena falha mas ainda esse final de semana consigo consertar, atualizo aqui 
+  
+Email: vitorpereirathomee@gmail.com
+
+
+
